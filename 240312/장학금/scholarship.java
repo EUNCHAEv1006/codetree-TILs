@@ -9,9 +9,9 @@ public class Main {
 
         if(middle >= 90) {
             if(finalE >= 95) {
-                System.out.println("10");
+                System.out.println("100000");
             } else if(finalE >= 90) {
-                System.out.println("5");
+                System.out.println("50000");
             } else {
                 System.out.println("0");
             }

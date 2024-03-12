@@ -6,9 +6,7 @@ public class Main {
 
         int n = scanner.nextInt();
 
-        if(n%2 !=0 || n%3==0) {
-            System.out.println("true");
-        } else if (n%2==0 || n%5==0) {
+        if(n%2 !=0 || n%3==0 || n%2==0 || n%5==0) {
             System.out.println("true");
         } else {
             System.out.println("false");

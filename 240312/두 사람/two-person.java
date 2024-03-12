@@ -11,9 +11,9 @@ public class Main {
         String sexB = sc.next();
 
         if((ageA >= 19 && ageB >= 19) || (sexA.equals("M") && sexB.equals("M"))) {
-            System.out.println("1");
+            System.out.println(1);
         } else {
-            System.out.println("0");
+            System.out.println(0);
         }
     }
 

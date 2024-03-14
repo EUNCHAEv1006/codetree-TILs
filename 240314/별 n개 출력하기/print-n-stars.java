@@ -5,9 +5,11 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         int n = scanner.nextInt();
+        int i = 1;
 
-        for(int i=1; 1<=50; i++) {
+        while(i<=n){
             System.out.println("*");
+            i++;
         }
     }
 }

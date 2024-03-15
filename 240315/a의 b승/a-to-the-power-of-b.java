@@ -2,16 +2,21 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        
+        // 변수 선언 및 입력
+        int a, b;
+        int prod = 1;
 
-        int a = scanner.nextInt();
-        int b = scanner.nextInt();
-        int answer = a;
+        a = sc.nextInt();
+        b = sc.nextInt();
 
-        for(int i=a; i<=b; i++) {
-            answer *= a;
+        // a를 b번 곱합니다.
+        for(int i = 1; i <= b; i++) {
+            prod *= a;
         }
 
-        System.out.println(answer);
+        // 출력
+        System.out.print(prod);
     }
 }

@@ -5,20 +5,24 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         int n = scanner.nextInt();
-        int[] arr = new int[10];
+        List<Integer> list = new ArrayList<>();
 
-        arr[0] = 1;
-        arr[1] = n;
+        // 첫 번째와 두 번째 항 초기화
+        list.add(1);
+        list.add(n);
 
-        for (int i = 2; i < 10; i++) {
-      arr[i] = arr[i-1] + arr[i-2];
-    }
+        // 100을 넘을 때까지 계속 항을 추가
+        while (true) {
+            int nextValue = list.get(list.size() - 1) + list.get(list.size() - 2);
+            list.add(nextValue);
+            if (nextValue > 100) {
+                break;
+            }
+        }
 
-    for(int i = 0; i < 10; i++){
-      System.out.print(arr[i] + " ");
-      if (arr[i] > 100) {
-        break;
-      }
-    }
+        // 결과 출력
+        for (int num : list) {
+            System.out.print(num + " ");
+        }
     }
 }
